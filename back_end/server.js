@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    origin:['http://localhost:5173',''], 
+    origin:['http://localhost:5173','https://travelapp-1-rvwg.onrender.com/'], 
     credentials: true, // Allow cookies and credentials
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allow these methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Ensure headers are allowed
