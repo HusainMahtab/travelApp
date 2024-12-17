@@ -8,7 +8,7 @@ The application is deployed on **Render.com** for both frontend and backend.
 ---
 
 ### 1. Home Page - List of Tours
-![Home Page](./screenshots/homepage.png)
+![Home Page](https://github.com/HusainMahtab/travelApp/blob/main/front_end/src/assets/projectImage.png)
 
 ** Live Link:(https://travelapp-1-rvwg.onrender.com/)
 
