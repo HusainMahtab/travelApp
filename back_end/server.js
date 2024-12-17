@@ -11,15 +11,13 @@ const app = express();
 
 app.use(
   cors({
-    origin:['http://localhost:5173','https://travelapp-1-rvwg.onrender.com/'], 
-    credentials: true, // Allow cookies and credentials
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allow these methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Ensure headers are allowed
+    origin: ['http://localhost:5173', 'https://travelapp-1-rvwg.onrender.com'], // No trailing slash
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
   })
 );
-// Handle OPTIONS preflight requests
 app.options('*', cors());
-
 // Connect to the database
 connectDB().then(() => {
   const port = process.env.PORT || 8000;
